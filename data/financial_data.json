@@ -1,0 +1,65 @@
+{
+  "banking_policies": [
+    {
+      "id": "POL-AML-001",
+      "category": "Anti-Money Laundering (AML) & Sanctions",
+      "title": "Suspicious Transaction & Cross-Border Reporting",
+      "rules": [
+        "Any cross-border transfer exceeding €10,000 must undergo Level-2 Sanctions screening against OFAC, EU, and UN lists.",
+        "Transactions flagged with high velocity (more than 3 transfers to new beneficiaries within 1 hour) require automated account restriction until identity re-verification.",
+        "No executive summary or report may recommend processing transactions involving unverified PEPs (Politically Exposed Persons) without Senior Compliance Officer sign-off."
+      ]
+    },
+    {
+      "id": "POL-CAP-002",
+      "category": "Capital Adequacy & Liquidity Risk",
+      "title": "Basel III Liquidity Coverage Ratio (LCR)",
+      "rules": [
+        "The minimum acceptable Liquidity Coverage Ratio (LCR) is 105%. If projected liquidity drops below 110%, an early warning capital buffer alert must be triggered.",
+        "Tier 1 Common Equity ratio (CET1) must remain above 12.5% across all quarterly portfolio forecasts.",
+        "Commercial loan concentration to commercial real estate (CRE) must not exceed 25% of total regulatory capital."
+      ]
+    },
+    {
+      "id": "POL-AI-003",
+      "category": "Responsible AI & Financial Advisory Governance",
+      "title": "Automated Advisory and Fiduciary Disclaimers",
+      "rules": [
+        "All AI-generated market summaries and financial research notes must explicitly state: 'This document is generated for institutional analytical purposes and does not constitute formal investment advice.'",
+        "Financial forecasts must cite verified data sources (audited 10-K, 10-Q, or central bank releases). Hallucinated metrics or unverified predictions are strictly non-compliant.",
+        "Customer personally identifiable information (PII) including account numbers, IBANs, and national IDs must be masked (e.g. ****1234) before parsing."
+      ]
+    }
+  ],
+  "mock_earnings_reports": [
+    {
+      "ticker": "AIBG",
+      "company_name": "Allied Irish Banks Group (AIB)",
+      "fiscal_year": "2024",
+      "quarter": "Q4 / Full Year",
+      "metrics": {
+        "net_interest_income_eur_m": 4120,
+        "operating_profit_eur_m": 2210,
+        "cet1_ratio_percent": 15.8,
+        "liquidity_coverage_ratio_percent": 182.0,
+        "non_performing_loans_percent": 2.1
+      },
+      "summary": "Strong net interest income expansion driven by deposit repricing and robust Irish retail banking loan demand. Asset quality remains resilient with CET1 capital ratio at 15.8%, well above regulatory minimums."
+    },
+    {
+      "ticker": "BOI",
+      "company_name": "Bank of Ireland Group",
+      "fiscal_year": "2024",
+      "quarter": "Q4 / Full Year",
+      "metrics": {
+        "net_interest_income_eur_m": 3710,
+        "operating_profit_eur_m": 1940,
+        "cet1_ratio_percent": 14.9,
+        "liquidity_coverage_ratio_percent": 168.0,
+        "non_performing_loans_percent": 2.3
+      },
+      "summary": "Solid commercial performance across Ireland and UK retail portfolios. Full year operating profit reached €1.94B, benefiting from higher loan margins and growth in business banking originations."
+    }
+  ]
+}
+
