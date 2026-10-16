@@ -112,8 +112,6 @@ python -m pytest evaluation/test_agent_eval.py -v
 
 ---
 
-## 👨‍💻 Author
-**Rahul Mishra**  
-*AI / GenAI Platform Engineer | Conversational AI & Cloud Architect*  
-* [LinkedIn](https://linkedin.com/in/rahulmishra23)
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
 
